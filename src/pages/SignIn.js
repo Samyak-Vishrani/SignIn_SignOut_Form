@@ -67,7 +67,7 @@ const SignIn = () => {
 
 
     return (
-        <main>
+        <main className={theme}>
 
             <nav className="navbar">
                 <div className="nav-container">

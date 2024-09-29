@@ -103,8 +103,7 @@ input {
 
 main {
   height: 100vh;
-  /* background: url('/src/photos/bg-green.png') no-repeat; */
-  background: url('/src/photos/bg-blue.avif') no-repeat;
+  background: url('/src/photos/bg_3.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -196,62 +195,51 @@ h1 {
 
 
 
-/* Green and Blue Themes */
+/* Green and green Themes */
 
-.green #dob,
-.green input::placeholder {
-  color: rgba(0, 0, 255, 0.5);
+.white #dob,
+.white input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.white .linking p,
+.white .link ,
+.white h1,
+.white input {
+  color: rgb(255, 255, 255);
+}
+.white .toggle-theme {
+  background-color: rgb(255, 255, 255);
+}
+.white .main-div {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.white .input-box input {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.white .submit {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.green input::placeholder,
+.green #dob  {
+  color:rgb(255, 255, 255, 0.5)
 }
 .green .linking p,
-.green .link ,
+.green .link,
 .green h1,
 .green input {
-  color: rgb(0, 0, 255);
-}
-.green .toggle-theme {
-  background-color: rgb(0, 0, 255);
-}
-.green .main-div {
-  border-color: rgba(0, 0, 255, 0.6);
-}
-.green main {
-  height: 100vh;
-  background: url('/src/photos/bg-green.png') no-repeat;
-  background-size: cover;
-}
-.green .input-box input {
-  border-bottom: 2px solid rgb(0, 0, 255);
-}
-.green .submit {
-  background-color: rgb(0, 0, 255);
-}
-
-
-.blue input::placeholder,
-.blue #dob  {
-  color:rgb(62, 213, 51, 0.5)
-}
-.blue .linking p,
-.blue .link,
-.blue h1,
-.blue input {
   color: rgb(41, 197, 29);
 }
-.blue .toggle-theme {
+.green .toggle-theme {
   background-color: rgb(62, 213, 51);
 }
-.blue .main-div {
+.green .main-div {
   border-color: rgba(62, 213, 51, 0.6);
 }
-.blue main {
-  height: 100vh;
-  /* background: url('/src/photos/bg-green.png') no-repeat; */
-  background: url('/src/photos/bg-blue.avif') no-repeat;
-  background-size: cover;
-}
-.blue .input-box input {
+.green .input-box input {
   border-bottom: 2px solid rgb(62, 213, 51);
 }
-.blue .submit {
+.green .submit {
   background-color: rgb(62, 213, 51);
 }

@@ -1,11 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import name from "../photos/name.svg";
-import username from "../photos/username.svg";
-import mail from "../photos/mail.svg";
-import phone from "../photos/phone.svg";
-import password from "../photos/password.svg";
+import name from "../photos/name.png";
+import username from "../photos/username.png";
+import mail from "../photos/mail.png";
+import phone from "../photos/phone.png";
+import password from "../photos/password.png";
+
 
 
 const SignUp = () => {
@@ -121,12 +122,12 @@ const SignUp = () => {
         }
     }
 
-    const [theme, setTheme] = useState('blue');
+    const [theme, setTheme] = useState('green');
 
     const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'blue' ? 'green' : 'blue'));
-        console.log(theme);
+        setTheme((prevTheme) => (prevTheme === 'green' ? 'white' : 'green'));
     };
+
 
 
     return (
