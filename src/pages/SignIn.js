@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import mail from "../photos/mail.svg";
-import password from "../photos/password.svg";
+import { Button } from '@mui/material';
+import MailIcon from '@mui/icons-material/Mail';
+import LockIcon from '@mui/icons-material/Lock';
 
 
 const SignIn = () => {
@@ -57,12 +58,13 @@ const SignIn = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         validateData(e);
+        console.log(formData);
     }
 
-    const [theme, setTheme] = useState('blue');
+    const [theme, setTheme] = useState('black');
 
     const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'blue' ? 'green' : 'blue'));
+        setTheme((prevTheme) => (prevTheme === 'black' ? 'white' : 'black'));
     };
 
 
@@ -77,7 +79,7 @@ const SignIn = () => {
                 </div>
             </nav>
 
-            <section>
+            <section className={theme}>
                 <div className="main-div">
 
                     <h1>Sign In</h1>
@@ -92,8 +94,8 @@ const SignIn = () => {
                                 placeholder="Enter E-mail"
                                 onChange={enteredEmail}
                             />
-                            <img className="icon" src={mail}></img>
-                        </div>
+                            <Button startIcon={<MailIcon />}className='icon'></Button>
+                            </div>
                         <div className="input-box">
                             <label htmlFor="pass">Password</label>
                             <input
@@ -103,7 +105,7 @@ const SignIn = () => {
                                 placeholder="Enter Password"
                                 onChange={enteredPass}
                             />
-                            <img className="icon" src={password}></img>
+                            <Button startIcon={<LockIcon />}className='icon'></Button>
                         </div>
 
                         <button

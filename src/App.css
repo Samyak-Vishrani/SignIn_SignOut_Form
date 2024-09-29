@@ -103,7 +103,8 @@ input {
 
 main {
   height: 100vh;
-  background: url('/src/photos/bg_3.jpg') no-repeat;
+  /* background: url('/src/photos/bg_3.jpg') no-repeat; */
+  /* background-color: #000000; */
   background-size: cover;
 }
 
@@ -115,9 +116,9 @@ h1 {
   width: 310px;
   position: relative;
   /* margin: 5px 0; */
-  /* border: none;
-  border-bottom: 2px solid #fff;
-  background: transparent; */
+  border: none;
+  /* border-bottom: 2px solid #fff; */
+  /* background: transparent; */
 }
 
 /* .input-box label {
@@ -159,9 +160,10 @@ h1 {
 
 .input-box .icon {
   position: absolute;
-  right: 28px;
+  right: 0px;
   bottom: 16px;
   height: 25px;
+  /* width: 15px; */
 }
 
 .submit {
@@ -195,51 +197,65 @@ h1 {
 
 
 
-/* Green and green Themes */
+/* White and black Themes */
 
 .white #dob,
 .white input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 .white .linking p,
 .white .link ,
 .white h1,
 .white input {
-  color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
+  ;
 }
 .white .toggle-theme {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .white .main-div {
-  border-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
 }
 .white .input-box input {
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 .white .submit {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.white{
   background-color: rgb(255, 255, 255);
 }
 
 
-.green input::placeholder,
-.green #dob  {
+.black input::placeholder,
+.black #dob  {
   color:rgb(255, 255, 255, 0.5)
 }
-.green .linking p,
-.green .link,
-.green h1,
-.green input {
-  color: rgb(41, 197, 29);
+.black .linking p,
+.black .link,
+.black h1 {
+  color: rgb(255, 255, 255);
 }
-.green .toggle-theme {
-  background-color: rgb(62, 213, 51);
+.black input {
+  color: rgb(255, 255, 255);
 }
-.green .main-div {
-  border-color: rgba(62, 213, 51, 0.6);
+.black .toggle-theme {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
 }
-.green .input-box input {
-  border-bottom: 2px solid rgb(62, 213, 51);
+.black .main-div {
+  border-color: rgb(255, 255, 255);
 }
-.green .submit {
-  background-color: rgb(62, 213, 51);
+.black .input-box input {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.black .submit {
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+.black{
+  background-color: #000000;
+  height: 150vh;
 }

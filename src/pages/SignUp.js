@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import name from "../photos/name.png";
-import username from "../photos/username.png";
-import mail from "../photos/mail.png";
-import phone from "../photos/phone.png";
-import password from "../photos/password.png";
+import { Button } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
+import MailIcon from '@mui/icons-material/Mail';
+import PhoneIcon from '@mui/icons-material/Phone';
+import LockIcon from '@mui/icons-material/Lock';
 
 
 
@@ -122,10 +122,11 @@ const SignUp = () => {
         }
     }
 
-    const [theme, setTheme] = useState('green');
+    const [theme, setTheme] = useState('black');
 
     const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === 'green' ? 'white' : 'green'));
+        setTheme((prevTheme) => (prevTheme === 'black' ? 'white' : 'black'));
+        <PersonIcon style={{ fontSize: 40, color: 'blue' }} />
     };
 
 
@@ -160,7 +161,7 @@ const SignUp = () => {
                                 onChange={addName}
                             />
                             {errors.name && <p className="error">{errors.name}</p>}
-                            <img className="icon" src={name}></img>
+                            <Button startIcon={<PersonIcon />}className='icon'></Button>
                         </div>
                         <div className="input-box">
                             <label htmlFor="email">E-mail</label>
@@ -173,7 +174,7 @@ const SignUp = () => {
                                 onChange={addEmail}
                             />
                             {errors.email && <p className="error">{errors.email}</p>}
-                            <img className="icon" src={mail}></img>
+                            <Button startIcon={<MailIcon />}className='icon'></Button>
                         </div>
                         <div className="input-box">
                             <label htmlFor="username">Username</label>
@@ -185,7 +186,7 @@ const SignUp = () => {
                                 value={formData.username}
                                 onChange={addUsername}
                             />
-                            <img className="icon" src={username}></img>
+                            <Button startIcon={<PersonIcon />}className='icon'></Button>
                         </div>
                         <div className="input-box">
                             <input
@@ -207,7 +208,7 @@ const SignUp = () => {
                                 value={formData.phone}
                                 onChange={addPhoneNo}
                             />
-                            <img className="icon" src={phone}></img>
+                            <Button startIcon={<PhoneIcon />}className='icon'></Button>
                         </div>
                         <div className="input-box">
                             <label htmlFor="pass">Password</label>
@@ -220,7 +221,7 @@ const SignUp = () => {
                                 onChange={addPass}
                             />
                             {errors.pass && <p className="error">{errors.pass}</p>}
-                            <img className="icon" src={password}></img>
+                            <Button startIcon={<LockIcon />}className='icon'></Button>
                         </div>
                         <div className="input-box">
                             <label htmlFor="confirmPass">Confirm Password</label>
@@ -233,7 +234,7 @@ const SignUp = () => {
                                 onChange={confirmPass}
                             />
                             {errors.confirmPass && <p className="error">{errors.confirmPass}</p>}
-                            <img className="icon" src={password}></img>
+                            <Button startIcon={<LockIcon />}className='icon'></Button>
                         </div>
 
                         <button
